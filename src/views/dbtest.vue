@@ -1,5 +1,6 @@
 <template>
   <div>
+   
     <h1>Names</h1>
     <el-input style="width:250px" id="name" v-model="namegp" placeholder="Press enter key to add name" @keyup.enter.native="addname()"></el-input>
     <ul>
@@ -72,7 +73,8 @@ export default {
         .database()
         .ref("names/" + key)
         .remove();
-    }
+    },
+   
   },
   created() {
     firebase
