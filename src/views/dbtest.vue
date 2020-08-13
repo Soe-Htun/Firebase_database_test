@@ -15,7 +15,7 @@
         <br />
         <br />
 
-        <el-input style="width:250px" v-if="VisibleInput" v-model="editForm[key]" @keyup.enter.native="edit(key)"></el-input>
+        <el-input style="width:250px" v-if="VisibleInput" v-model="editForm[key]" ></el-input>
       </li>
     </ul>
   </div>
